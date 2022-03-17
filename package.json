@@ -5,11 +5,14 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "docker build -t jasont01/app_manager .",
+    "push": "npm run build && docker push jasont01/app_manager"
   },
   "author": "jason@jasont.us",
   "dependencies": {
     "axios": "^0.26.1",
+    "cron": "^1.8.2",
     "dotenv": "^16.0.0"
   }
 }
