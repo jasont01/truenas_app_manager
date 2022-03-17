@@ -1,0 +1,15 @@
+{
+  "name": "truenas_app_manager",
+  "version": "1.0.0",
+  "description": "update docker images if available",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "jason@jasont.us",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0"
+  }
+}
