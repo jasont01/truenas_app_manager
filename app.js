@@ -37,6 +37,8 @@ const app = async () => {
   }
 }
 
+app()
+
 const job = new cron.CronJob('0 0 2 * * 6', app, null, true, 'America/New_York')
 
 job.start()
